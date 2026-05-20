@@ -49,8 +49,10 @@ decode_jwt() {
     exit 1
   fi
 
-  local header_encoded=$(echo "$token" | cut -d. -f1)
-  local payload_encoded=$(echo "$token" | cut -d. -f2)
+  local header_encoded
+  header_encoded=$(echo "$token" | cut -d. -f1)
+  local payload_encoded
+  payload_encoded=$(echo "$token" | cut -d. -f2)
 
   echo -e "${BLUE}Header:${NC}"
   decode_part "$header_encoded" | jq . || echo -e "${RED}Failed to parse header as JSON${NC}"
