@@ -1,16 +1,17 @@
 [plugin]
 name = "fledge-plugin-jwt"
 version = "0.1.0"
-description = "A fledge plugin"
-author = "0xLeif"
+description = "Decode and inspect JWTs from the CLI or a beautiful web UI"
+author = "CorvidLabs"
 license = "MIT"
 
 [[commands]]
 name = "jwt"
-description = "A fledge plugin"
+description = "JWT inspector and decoder"
 binary = "bin/jwt"
 
 [capabilities]
-exec = false
+exec = true
 store = false
 metadata = false
+

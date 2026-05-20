@@ -1,18 +1,29 @@
 # fledge-plugin-jwt
 
-A fledge plugin
+A [fledge](https://github.com/CorvidLabs/fledge) plugin for JWT decoding and inspection.
 
-## Install
+## Features
+
+- **CLI Decoding**: Quickly decode JWTs from your terminal.
+- **Web Inspector**: Beautiful, premium web UI for detailed inspection.
+- **Zero Dependencies**: Powered by standard tools like `jq` and `base64`.
+
+## Installation
 
 ```bash
-fledge plugins install 0xLeif/fledge-plugin-jwt
+fledge plugins install CorvidLabs/fledge-plugin-jwt
 ```
 
 ## Usage
 
+### Decode a token
 ```bash
-fledge jwt
-fledge jwt --help
+fledge jwt decode <your-token>
+```
+
+### Open the Web Inspector
+```bash
+fledge jwt ui
 ```
 
 ## How it works
