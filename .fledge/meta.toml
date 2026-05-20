@@ -1,0 +1,32 @@
+[source]
+template = "fledge-plugin"
+fledge_version = "1.4.2"
+created = "2026-05-19"
+
+[variables]
+author = "0xLeif"
+command_name = "jwt"
+date = "2026-05-19"
+description = "A fledge plugin"
+emoji = "🔌"
+github_org = "0xLeif"
+license = "MIT"
+needs_exec = "false"
+needs_store = "false"
+project_name = "fledge-plugin-jwt"
+project_name_camel = "fledgePluginJwt"
+project_name_kebab = "fledge-plugin-jwt"
+project_name_pascal = "FledgePluginJwt"
+project_name_snake = "fledge_plugin_jwt"
+year = "2026"
+
+[files]
+".github/workflows/ci.yml" = "90ffbcf4f669a4bf3a3abd57d9d0e94242788b90db9977cd2e71dc55a8a1d628"
+".github/workflows/pages.yml" = "ee551643c79435cf219a32add9481e3d5b28030ddb526cd811873f4cfcec3420"
+".gitignore" = "69739a6b2550e6facc9c70253d7342b2981c1e39fc2c38713eb88d063f379db8"
+LICENSE = "2575ff28cb04763f17ce392823ce091f734e337369e3138a6b9b588c4816f2a1"
+"README.md" = "0886f16f524835c8184999de10668262e3f09341936ea5bb9c887baa109f98e9"
+"bin/jwt" = "fd5969f0634b5a792804a2d7302605caad293b981ed401596626dc6732d16a96"
+"docs/index.html" = "6bb4862a2f6dc92d01bca901cb9ac557f85d4a9568440240e3e8858ddc120971"
+"fledge.toml" = "4761456e8176ffcd51237d3ec5c6ef316a032a5bf526c2ebe331ac30b2688ca5"
+"plugin.toml" = "8b3639903780089ce7309531ca68f0899329cca608c380eec09e6876ecc1a0ee"

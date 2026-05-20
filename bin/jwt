@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# fledge-plugin-jwt — A fledge plugin
+#
+# This is a starter stub. Replace it with any language — the only contract
+# is that `bin/jwt` is executable and supports `--help`.
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+fledge jwt — A fledge plugin
+
+USAGE:
+  fledge jwt [OPTIONS] [ARGS]
+
+OPTIONS:
+  -h, --help    Show this help
+
+EXAMPLES:
+  fledge jwt
+EOF
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    -*)
+      echo "fledge-plugin-jwt: unknown flag '$1'" >&2
+      exit 64
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+echo "Hello from fledge-plugin-jwt!"

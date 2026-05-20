@@ -1,0 +1,16 @@
+[plugin]
+name = "fledge-plugin-jwt"
+version = "0.1.0"
+description = "A fledge plugin"
+author = "0xLeif"
+license = "MIT"
+
+[[commands]]
+name = "jwt"
+description = "A fledge plugin"
+binary = "bin/jwt"
+
+[capabilities]
+exec = false
+store = false
+metadata = false
