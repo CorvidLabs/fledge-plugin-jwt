@@ -1,0 +1,5 @@
+[registry]
+name = "fledge-plugin-jwt-trust-wave5"
+
+[specs]
+jwt = "specs/jwt/jwt.spec.md"

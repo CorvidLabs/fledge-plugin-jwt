@@ -1,7 +1,11 @@
-# fledge.toml — project task definitions
-# Docs: https://github.com/CorvidLabs/fledge#task-runner
-
 [tasks]
-# build = "make build"
-# test = "make test"
-# lint = "echo 'add your linter'
+lint = "shellcheck bin/jwt"
+syntax = "bash -n bin/jwt"
+help = "bin/jwt --help >/dev/null"
+decode = "bin/jwt decode eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMjMifQ.sig | grep -q '\"sub\": \"123\"'"
+invalid = "if bin/jwt decode bad >/dev/null 2>&1; then exit 1; fi"
+manifest = "grep -q 'binary = \"bin/jwt\"' plugin.toml"
+
+[lanes.verify]
+description = "Lint and behavior-check the JWT inspector"
+steps = ["lint", "syntax", "help", "decode", "invalid", "manifest"]
