@@ -1,6 +1,6 @@
 ---
 module: jwt
-version: 1
+version: 2
 status: active
 files:
   - bin/jwt
@@ -60,3 +60,4 @@ Then the plugin prints the decoded header and payload without claiming signature
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document existing JWT decoding and local inspector behavior for SpecSync 5 adoption. |
+| 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-jwt-fledge-plugin: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the JWT Fledge plugin |

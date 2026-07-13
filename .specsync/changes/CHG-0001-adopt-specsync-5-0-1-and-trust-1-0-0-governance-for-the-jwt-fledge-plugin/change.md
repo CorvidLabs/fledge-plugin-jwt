@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-jwt-fledge-plugin
-state: implementing
+state: accepted
 type: migration
 base_commit: faebb03ef390ce022f58aca139c208941faed1ad
 ---
